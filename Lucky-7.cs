@@ -36,7 +36,7 @@ namespace Lucky7
             InitializeComponent();
         }
 
-        // Display the 'spin' animation for the fruits, looping through 9 preset options each time
+        // Display the 'spin' animation for the fruits, looping through 8 preset options each time
         private void timer1_Tick(object sender, EventArgs e)
         {
             if(Choice == 1 && Round != 3)
@@ -103,7 +103,8 @@ namespace Lucky7
 
         void DisplayFruit()
         {
-            // Loop through each three fruit and display outcome
+            // Loop through each of the three fruit and display outcome
+            // Due to the nture of visual studio this must be hard coded unfortunately
             for (int i = 0; i <= 3; i++)
             {
                 Console.WriteLine(i);
